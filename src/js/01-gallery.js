@@ -2,8 +2,8 @@
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const gallery = document.querySelector('.gallery');
 const items = [];
@@ -21,10 +21,10 @@ galleryItems.forEach(element => {
   galleryItem.append(galleryLink);
   galleryLink.append(galleryImage);
   items.push(galleryItem);
-})
+});
 gallery.append(...items);
 new SimpleLightbox('.gallery a', {
   captions: true,
-  captionsData: "alt",
+  captionsData: 'alt',
   captionDelay: 250,
-})
+});
